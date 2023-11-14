@@ -12,10 +12,10 @@ jobs:
       - name: Check out code 
         uses: actions/checkout@v2
 
-      - name: Setup .NET 5
+      - name: Setup .NET 7
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '5.0.x'
+          dotnet-version: 'net7.0'
 
       - name: Restore dependencies
         run: dotnet restore
